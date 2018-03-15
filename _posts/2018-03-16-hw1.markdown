@@ -6,9 +6,9 @@ date:       2018-03-16 01:00:00
 author:     Dennis
 header-img: ""
 tags:
-    -学习
-    -系统分析与设计
-    -Homework
+    - 学习
+    - 系统分析与设计
+    - Homework
 ---
 
 ###  1. 简单题
