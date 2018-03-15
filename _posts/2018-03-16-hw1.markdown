@@ -1,0 +1,83 @@
+﻿---
+layout:     post
+title:      "系统分析与设计 Homework - 1"
+subtitle:   ""
+date:       2018-03-16 01:00:00
+author:     Dennis
+header-img: ""
+tags:
+    -学习
+    -系统分析与设计
+    -Homework
+---
+
+###  1. 简单题
+ - 软件工程的定义
+ > 　　软件工程是一门指导计算机软件开发和维护的工程学科。采用工程的概念、原理、技术和方法来开发与维护软件，把经过实践考研而证明正确的管理技术和当前能够得到的最好的技术方法结合起来，这就是软件工程。
+
+ - 阅读经典名著“人月神话”等资料，解释software crisis、COCOMO模型。
+ > 　　软件危机是指由于软件的规模越来越来，复杂度不断增加，软件需求量增大，使得现有的软件开发模式和技术无法适应软件发展的需要，从而导致在软件开发和维护的过程中出现一系列严重问题的现象。
+ > 　　COCOMO模型，中文为构造性成本模型，是由[Barry W. Boehm](https://en.wikipedia.org/wiki/Barry_Boehm)提出的软件成本估算模型。从本质上来说是一种参数化的项目估算方法，其中，模型的参数是通过使用一些历史项目来拟合回归公式得出的。
+
+ - 软件生命周期
+ > 　　软件生命周期是软件的产生直到报废的生命周期。早期的周期内有问题定义、可行性分析、总体描述、系统设计、编码、调试和测试、验收和运行、维护升级到废弃等阶段。随着新的面向对象的设计方法和技术的成熟，其有了一定的调整，即除了以上阶段外，还新增了将以上阶段的活动组合在内的迭代阶段。
+
+ - 按照SWEBok的KA划分，本课程关注哪些KA或知识领域？
+ > SWEBok V3的KA划分如下：
+ > - 软件需求（Software requirements）
+ > - 软件设计（Software design）
+ > - 软件建构（Software construction）
+ > - 软件测试（Software testing）
+ > - 软件维护（Software maintenance）
+ > - 软件配置管理（Software configuration management）
+ > - 软件工程管理（Software engineering management）
+ > - 软件工程过程（Software engineering process）
+ > - 软件工程模型与方法（Software engineering models and methods）
+ > - 软件质量（Software quality）
+ > - 软件工程专业实践（Software engineering professional practice）
+ > - 软件工程经济学（Software engineering economics）
+ > - 计算基础（Computing foundations）
+ > - 数学基础（Mathematical foundations）
+ > - 工程基础（Engineering foundations）
+ > 本课程关注软件需求、软件设计、软件建构、软件工程管理、软件工程过程、软件工程模型与方法。
+
+ - 解释CMMI的五个级别。例如：Level 1 - Initial：无序，自发生产模式。
+ > - Level 1 - Initial（初始级）：软件过程是无序甚至混乱的，成功取决于个人努力，管理是反应式的。
+ > - Level 2 - Managed（已管理级）：建立了基本的项目管理过程，制定了必要的过程纪律，能重复已有应用项目的成功经验。
+ > - Level 3 - Defined（已定义级）：将软件管理和工程两方面的过程文档化、标准化，并综合成标准软件过程。所有项目均适用经批准、裁剪的标准软件过程来开发和维护软件，软件产品的生产在整个软件过程中是可见的。
+ > - Level 4 - Quantitatively Managed（量化管理级）：分析对软件过程和产品质量的详细度量数据，对软件过程和产品都有定量的理解与控制。管理有一个作出结论的客观依据，管理能够在定量的范围内预测性能。
+ > - Level 5 - Optimizing（优化管理级）：过程的量化反馈和先进的新思想、新技术促使过程持续不断改进。
+
+ - 用自己语言简述SWEBok或CMMI（约200字）
+ > 　　Capability Maturity Model Integration（CMMI），即能力成熟度模型集成，是系统工程、软件采供、人力资源管理以及集成产品和过程开发方面的多个能力成熟度模型的集成。CMMI分为5个评级：初始级、已管理级、已定义级、量化管理级、优化管理级，其目的是为了让软件企业能更有效地解决软件项目过程改进难度增大问题、实现软件工程的并行与多学科组合、实现过程改进的最佳效益，同时也是对公司自身软件能力的一个有效评估。
+
+### 2. 解释PSP各项指标及技能要求
+ - 阅读[《现代软件工程》](http://www.cnblogs.com/xinz/archive/2011/11/27/2265425.html)的PSP：[Personal Software Process](http://www.cnblogs.com/xinz/archive/2011/10/22/2220872.html)章节。
+ - 按照表格PSP 2.1，了解一个软件工程师在接到一个任务之后要做什么，需要哪些技能，解释你打算如何统计每项数据？（期末考核，每人按开发阶段提交这个表）
+
+>  ***PSP 2.1***
+
+> - 计划（Planning）
+>  - 估计任务耗时（Estimate）
+
+> - 开发（Development）
+>  - 分析需求（Analysis）
+>  - 生成设计文档（Design Spec）
+>  - 设计复审（Design Review）:和同事审核设计文档
+>  - 代码规范（Coding Standard）：为目前的开发指定合适的规范
+>  - 具体设计（Design）
+>  - 具体编码（Coding）
+>  - 代码复审（Code Review）
+>  - 测试（Test）:包括自我测试，修改代码，提交测试
+
+> - 记录花费时间（Record Time Spent）
+> - 测试报告（Test Report）
+> - 计算工作量（Size Measurement）
+> - 事后总结（Postmortem）
+> - 提出过程改进计划（process improvement Plan）      
+&ensp;
+&ensp;
+> 　　从上表可以看出，一个软件工程师在接到一个任务之后首先要估计该任务的耗时，符合预期的话再进行分析需求，生成设计文档及复审，指定代码规范，而后才是具体细节的设计以及编码测试，最后还要对该任务进行度量反馈、总结评估，并提出改进计划。
+> 　　这就要求一个软件工程师不但要有一定的编码能力，还要具有一定的分析、按时交付、总结、持续改进、团队管理以及交流能力。
+> 　　至于如何统计每项的数据，我想首先得要制定一个计划表，即每（日）周安排固定的时间集中编码，并且严格遵守它，这样就可以较为方便地统计每项的数据了。
+
