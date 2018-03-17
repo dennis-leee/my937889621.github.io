@@ -62,7 +62,7 @@ kramdown:
 ba_track_id: d6eb3968d53cf57278f688c55dab9007
 # Google Analytics
 ga_track_id: 'UA-115869568-1'            # Format: UA-xxxxxx-xx
-#ga_domain: auto
+ga_domain: auto
 
 
 
