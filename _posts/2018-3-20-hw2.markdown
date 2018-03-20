@@ -1,0 +1,51 @@
+---
+layout:     post
+title:      "系统分析与设计 Homework - 2"
+subtitle:   ""
+date:       2018-03-21 01:00:00
+author:     Dennis
+header-img: ""
+tags:
+    - 学习
+    - 系统分析与设计
+    - Homework
+---
+
+### 1. 简答题
+
+- 简述瀑布模型、增量模型、螺旋模型（含原型方法）的优缺点。
+
+  <table>
+    <tr>
+      <th></th>
+      <th>优点</th>
+      <th>缺点</th>
+    </tr>
+    <tr>
+      <th rowspan = "4">瀑布模型</th>
+      <td rowspan = "4">
+      1. 为项目提供了按阶段划分的检查点<br />
+      2. 当前阶段完成后，只需要去关注后续阶段<br />
+      3. 可在迭代模型中应用瀑布模型<br />
+      4. 有利于大型软件开发过程中人员的组织、管理，有利于软件开发方法和工具的研究，从而提高了大型软件项目开发的质量和效率
+      </td>
+      <td rowspan = "4">
+      1. 依赖于早期需求调查，不适应需求的变化<br />
+      2. 通过过多的强制完成日期和里程碑来跟踪项目阶段<br />
+      3. 单一流程，不可逆，项目各阶段之间极少有反馈<br />
+      4. 只有在项目生命周期的后期才能看到结果
+      </td>
+    </tr>
+    <tr>
+      <th rowspan = "4">增量模型</th>
+      <td rowspan = "4"></td>
+      <td rowspan = "4"></td>
+    </tr>
+    <tr>
+      <th rowspan = "4">螺旋模型</th>
+      <td rowspan = "4"></td>
+      <td rowspan = "4"></td>
+    </tr>
+  </table>
+  
+   to be editing
