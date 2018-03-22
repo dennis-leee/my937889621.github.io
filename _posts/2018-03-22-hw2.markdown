@@ -118,5 +118,5 @@ tags:
   - 每个人的任务是1-2项
   - 至少包含一个团队活动任务
 
-  ![Kanban-1](/img/SSAD-homework-2/kanban-1.png)
-  ![Kanban-2](/img/SSAD-homework-2/kanban-2.png)
+  ![Kanban-1](img/SSAD-homework-2/kanban-1.png)
+  ![Kanban-2](img/SSAD-homework-2/kanban-2.png)
