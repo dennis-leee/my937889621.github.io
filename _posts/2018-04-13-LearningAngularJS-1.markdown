@@ -18,6 +18,7 @@ tags:
 # 一、简介
 ## 1. 什么是AngularJS？
 > *[AngularJS](https://angular.cn/)是一个开发动态Web应用的框架。它让你可以使用HTML作为模板语言并且可以通过扩展的HTML语法来使应用组件更加清晰和简洁。它的创新之处在于，通过数据绑定和依赖注入减少了大量代码，而这些都在浏览器端通过JavaScript实现，能够和任何服务器端技术完美结合。*
+
 ## 2.什么是Angular CLI？
 > [Angular CLI](https://cli.angular.io/) 是一个命令行接口，用于实现Angular工程的自动化部署、开发、测试和发布。
 
@@ -30,11 +31,11 @@ $ node -v #查看nodeJS版本号
 $ npm -v  #查看npm版本号
 ```
 若未安装，可直接去[官网](https://nodejs.org/en/)下载安装
-![node.js](/img/in-post/in-post/LearningAngularJS-1/nodejs.png)
+![node.js](/img/in-post/LearningAngularJS-1/nodejs.png)
 具体安装与配置步骤可以参考[node和npm的安装和镜像源的修改](https://www.cnblogs.com/ryze/p/ryze11.html)
 
 这里我之前就已经安装好了
-![check nodejs version](/img/in-post/in-post/LearningAngularJS-1/checkVersion.png)
+![check nodejs version](/img/in-post/LearningAngularJS-1/checkVersion.png)
 不过出于强迫症，还是升级一下版本吧，Windows直接去官网下载安装包覆盖安装，Linux可以使用如下指令更新：
 ```
 $ npm update -g    #更新npm
@@ -43,15 +44,15 @@ $ npm install -g n  #下载n模块（该模块专门用来管理node.js的版本
 $ n stable  #升级到最新稳定版本
 ```
 更新成功：
-![update node js](/img/in-post/in-post/LearningAngularJS-1/update.png)
+![update node js](/img/in-post/LearningAngularJS-1/update.png)
 ## 2. 安装Angular CLI
 ```
 $ npm install -g @angular/cli   #安装
 $ ng version                    #验证安装
 ```
 若无误，应出现以下界面
-![install CLI](/img/in-post/in-post/LearningAngularJS-1/installCLI.png)
-![vertificate CLI](/img/in-post/in-post/LearningAngularJS-1/vertificateCLI.png)
+![install CLI](/img/in-post/LearningAngularJS-1/installCLI.png)
+![vertificate CLI](/img/in-post/LearningAngularJS-1/vertificateCLI.png)
 
 # 三、创建新项目
 开启终端窗口，进入项目目录，输入如下指令
@@ -137,8 +138,8 @@ ng serve --open
 ```
 `ng serve`指令启动开发服务器，并监听文件变化，在文件被修改时重构该应用。
 `--open`参数自动打开浏览器，并访问`localhost:4200`
-![serve open](/img/in-post/in-post/LearningAngularJS-1/serveOpen.png)
-![welcome page](/img/in-post/in-post/LearningAngularJS-1/welcomePage.png)
+![serve open](/img/in-post/LearningAngularJS-1/serveOpen.png)
+![welcome page](/img/in-post/LearningAngularJS-1/welcomePage.png)
 
 # 五、编辑第一个Angular组件
 CLI已经为我们创建了第一个Angular组件：`app-root`。
@@ -162,6 +163,6 @@ export class AppComponent {
 > *My First Angular App*
 
 CLI自动重构该应用：
-![app-root](/img/in-post/in-post/LearningAngularJS-1/app-root.png)
+![app-root](/img/in-post/LearningAngularJS-1/app-root.png)
 
 至此，初步使用已OK。
