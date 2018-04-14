@@ -16,20 +16,19 @@ tags:
 
 # 一、环境部署
 ## 1. Unity3D
-　　直接去[官网](https://unity3d.com/cn)下载安装即可，博主使用的是2017.4.1最新版本。记得安装的时候勾选相应的发布平台（Android、IOS）支持，默认的是没勾的，这里博主用的是安卓.
-　　（网上找的图，别在意版本号）
-![installUnity](\img\in-post\Unity3DXEasyAR\Unity安装.png)
-　　至于VS，已经装有的了话记得取消勾选。
-    
+直接去[官网](https://unity3d.com/cn)下载安装即可，博主使用的是2017.4.1最新版本。记得安装的时候勾选相应的发布平台（Android、IOS）支持，默认的是没勾的，这里博主用的是安卓.（网上找的图，别在意版本号）  
+![installUnity](\img\in-post\Unity3DXEasyAR\Unity安装.png)  
+至于VS，已经装有的了话记得取消勾选。
+
 ## 2. EasyAR
-　　1. 去[官网](https://www.easyar.cn/view/download.html)下载SDK和Samples：(Basic版即可)
-![EasyARSDK](\img\in-post\Unity3DXEasyAR\EasyARSDK.png)
-![EasyARSamples](\img\in-post\Unity3DXEasyAR\EasyARSamples.png)
-    将其Samples解压到**无中文，无空格的目录** **无中文，无空格的目录** **无中文，无空格的目录**下，SDK可以先不管。
+1. 去[官网](https://www.easyar.cn/view/download.html)下载SDK和Samples：(Basic版即可)  
+![EasyARSDK](\img\in-post\Unity3DXEasyAR\EasyARSDK.png)  
+![EasyARSamples](\img\in-post\Unity3DXEasyAR\EasyARSamples.png)  
+将其Samples解压到**无中文，无空格的目录** **无中文，无空格的目录** **无中文，无空格的目录**下，SDK可以先不管。  
 ![unzipSamples](\img\in-post\Unity3DXEasyAR\unzipSamples.png)
-　2. 申请Key
-　　注册账号就不多说了，登录后进入
- 个人界面→SDK授权管理→添加SDK license key
+
+2. 申请Key
+注册账号就不多说了，登录后进入个人界面 → SDK授权管理 → 添加SDK license key
 ![addKey](\img\in-post\Unity3DXEasyAR\addKey.png)
 ![addKey1](\img\in-post\Unity3DXEasyAR\addKey1.png)
 应用名称随便填，Bundle ID（IOS）和PackageName（Android）在发布应用时会用到，按照如下格式填写：
