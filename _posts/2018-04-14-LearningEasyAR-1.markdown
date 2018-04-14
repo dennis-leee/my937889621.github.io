@@ -37,7 +37,7 @@ tags:
 
 ## 3. JDK && SDK(Android)  
 因为博主没有IOS，所以这里以Android为例，详细安装和配置教程可以参考  
-[unity安卓发布的环境配置和基本流程](https://blog.csdn.net/qq_22660469/article/details/78922367)
+[unity安卓发布的环境配置和基本流程](https://blog.csdn.net/qq_22660469/article/details/78922367)  
 IOS可以去网上查查相应的配置教程。
 
 # 二、调试运行
