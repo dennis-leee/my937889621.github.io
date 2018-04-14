@@ -13,8 +13,8 @@ tags:
 
 > ***前言***
 > *因为网上有很多这种教程，所以这里可能会对主要步骤讲的简略一点，着重讲一下博主自己配置过程中遇到的问题和解决方法*
-# 一、环境部署
 
+# 一、环境部署
 ## 1. Unity3D
 　　直接去[官网](https://unity3d.com/cn)下载安装即可，博主使用的是2017.4.1最新版本。记得安装的时候勾选相应的发布平台（Android、IOS）支持，默认的是没勾的，这里博主用的是安卓.
 　　（网上找的图，别在意版本号）
@@ -59,6 +59,7 @@ IOS可以去网上查查相应的配置教程。
  - 选择`File → Build Setting`，选中Android后，点击`Switch Platfrom`，待其加载完毕后，点击旁边的`Plarer Setting`，查看Unity主界面的Inspector视图，修改`Others Settings → Identification → Package Name`为**之前申请Key的时候设置的PackageName**。
  ![name](\img\in-post\Unity3DXEasyAR\name.png)
  然后就可以Build了。
+
 # 三、效果图
 ![result](\img\in-post\Unity3DXEasyAR\result.png)
 
