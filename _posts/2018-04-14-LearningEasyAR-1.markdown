@@ -47,7 +47,7 @@ IOS可以去网上查查相应的配置教程。
 在Project视图中选择`Assets → HelloAR → Scenes → HelloAR`  
 ![Open](\img\in-post\Unity3DXEasyAR\Open.png)  
 3. 修改Key值  
-在Hierachy视图中选择'HelloAR→EasyAR_Startup'，在Inspector视图中修改Key值为**之前申请的Key值**  
+在Hierachy视图中选择`HelloAR → EasyAR_Startup`，在Inspector视图中修改Key值为**之前申请的Key值**  
 ![addKey2](\img\in-post\Unity3DXEasyAR\addKey2.png)  
 4. 运行  
 到这一步PC有摄像头的话应该是可以正常运行了。如果没有摄像头，效果应该是黑屏，如果有其他提示信息，请检查之前的步骤。  
