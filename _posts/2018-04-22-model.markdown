@@ -13,12 +13,12 @@ tags:
 
 # 1. 用例建模
 ## A. 阅读Asg_RH文档，按Task1要求，使用工具UMLet以用户的角度绘制一个详细的用例图。
-![Full Use Case](/img/in-post/SSAD-homework/hw4/Asg-RH用例图.png)
+![Full Use Case](/img/in-post/SAAD-homework/hw4/Asg-RH用例图.png)
 
 ## B. 选择熟悉的订旅馆在线服务系统（或移动APP），绘制用例图。并满足一下要求：
 - 对比Asg_RH用例图，用色彩标注出创新用例或子用例
 - 尽可能识别外部系统，并用色彩标注新的外部系统和服务。
-![Order Hotel Use Case](/img/in-post/SSAD-homework/hw4/去哪儿用例图.png)
+![Order Hotel Use Case](/img/in-post/SAAD-homework/hw4/去哪儿用例图.png)
 
 ## C. 对比两个时代、不同地区产品的用例图，总结在项目早起，发现创新的思路和方法。
 
@@ -65,14 +65,14 @@ tags:
 # 2. 业务建模
 ## A. 在（1-B）基础上，用活动图建模找酒店的用例。简述利用流程图发现子用例的方法。
 - 在流程图中，每一状态即为一个子用例，而且每个状态之间的逻辑关系是严密的。这样，结合逻辑推导，反复审查流程图，即可发现更多的子用例。
-![Order Hotel Activity](/img/in-post/SSAD-homework/hw4/去哪儿活动图.png)
+![Order Hotel Activity](/img/in-post/SAAD-homework/hw4/去哪儿活动图.png)
 
 ## B. 选择你身边的银行ATM，用活动图描绘取款业务流程。
-![ATM Activity](/img/in-post/SSAD-homework/hw4/ATM取款活动图.png)
+![ATM Activity](/img/in-post/SAAD-homework/hw4/ATM取款活动图.png)
 
 ## C. 查找[淘宝退货业务官方文档](https://consumerservice.taobao.com/self-help#page=issue-detail&knowledgeId=1119776)，使用多泳道图，表示客户、淘宝网、淘宝商家服务系统、商家等用户和系统协同完成退货业务的过程，分析客户要完成退货业务，需要在淘宝网上实现哪些系统用例。
 - 淘宝网需要实现的系统用例有：客户正常退货、客服介入退货。
-![Taobao Activity](/img/in-post/SSAD-homework/hw4/淘宝退货活动图.png)
+![Taobao Activity](/img/in-post/SAAD-homework/hw4/淘宝退货活动图.png)
 
 # 3. 用例文本编写
 ## 在大作业的基础上，分析三种用例文本的优缺点。
