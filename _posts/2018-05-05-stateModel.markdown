@@ -21,6 +21,6 @@ tags:
 
  ![State Model](/img/in-post/SAAD-homework/hw6/订旅馆.png)
 
-### 2. 研究[淘宝退货流程活动图)](http://bigdata.taobao.com/doc.htm?spm=a219a.7629065.1.21.mjYP25#?docType=1&docId=102594)，对退货业务对象状态建模
+### 2. 研究[淘宝退货流程活动图](http://bigdata.taobao.com/doc.htm?spm=a219a.7629065.1.21.mjYP25#?docType=1&docId=102594)，对退货业务对象状态建模
 
 ![State Model](/img/in-post/SAAD-homework/hw6/淘宝退货.png)
