@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "系统分析与设计 Homework - 5"
+title:      "系统分析与设计 Homework - 6"
 subtitle:   "状态建模"
 date:       2018-05-05 18:00:00
 author:     Dennis
