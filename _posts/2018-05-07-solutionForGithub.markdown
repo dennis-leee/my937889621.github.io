@@ -18,13 +18,13 @@ tags:
 
 ### 方法二：改host
 国内Github的DNS污染严重，故绕过DNS，手动解析IP。
-1. 打开[DNS查询网站](http://tool.chinaz.com/dns)
+1. 打开[DNS查询网站](http://tool.chinaz.com/dns)  
 分别查询github.global.ssl.fastly.net、assets-cdn.github.com、github.com，选择一个TTL较小的，复制IP，放到HOST里面即可。
 ![check ip](/img/in-post/solutionForGithub/查dns-ip.png)
 ![host](/img/in-post/solutionForGithub/host.png)
 
 ### 方法三：用ssh
 如果方法二无效，可以试试这个（嗯，同样不保证有效）。貌似Git的默认push方式是https，这种方式受到上面原因的影响，速度慢的不行，我这只有60-80K/s，改了之后有500+K/s，好像还行。
-1. 打开Git Shell，执行以下命令：
+1. 打开Git Shell，执行以下命令：  
 `git config --global url.ssh://git@github.com/.insteadOf https://github.com/`
-2. 重启客户端，OK。
+2. 重启客户端，OK（逃
