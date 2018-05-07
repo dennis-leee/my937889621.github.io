@@ -41,10 +41,12 @@ tags:
 `Permission denied (publickey).`
 继续查，追到了[逼乎](https://www.zhihu.com/question/21402411)
 原来是我以前建密钥的时候用了自定义的名称（github_rsa），需要在.ssh/目录下添加个config文件：  
-`Host github.com
+```
+Host github.com
  HostName github.com
  User git
- IdentityFile ~/.ssh/github_rsa`  
+ IdentityFile ~/.ssh/github_rsa
+ ```
 这下总能git pull了，然后git push又出问题了,emmmm  
 不过shell还是好debug啊，仔细看看，发现是有个文件太大了，超过了github单文件限制(100MB)，删除后，重试，还是卡住了，WTK？！  
 猜测是因为版本记录的问题，已经把大文件写进记录里了。干脆直接重建仓库吧！
