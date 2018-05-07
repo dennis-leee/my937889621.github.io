@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Github相关问题
+title:      "Github相关问题"
 subtitle:   "不负责的"
 date:       2018-05-07 01:00:00
 author:     Dennis
