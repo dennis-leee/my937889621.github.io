@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "解决Github上传下载慢以及"Failed to publish/sync this branch"
+title:      "Github相关问题
 subtitle:   "不负责的"
 date:       2018-05-07 01:00:00
 author:     Dennis
