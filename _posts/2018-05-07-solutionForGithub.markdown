@@ -35,7 +35,7 @@ tags:
 （注：个人向解决方案）  
 照着下面的试着改成ssh，发现速度暴增，publish成功，刚高兴没多久，sync又失败了...  
 [Github错误：Failed to publish this branch](https://www.cnblogs.com/shoneworn/p/5262418.html)  
-继续查，又发现一个：  
+继续查：  
 [GitHub for Windows提交失败“failed to sync this branch”](https://blog.csdn.net/gzu_cs_yige23/article/details/50722454)  
 照着弄，新的问题又出现了,emmmm
 `Permission denied (publickey).`
@@ -46,6 +46,8 @@ tags:
  User git
  IdentityFile ~/.ssh/github_rsa`  
 这下总能git pull了，然后git push又出问题了,emmmm  
-不过shell还是好debug啊，仔细看看，发现是有个文件太大了，超过了github单文件限制(100MB)，删除后，在shell执行以下命令：  
-`git init`  
-重启下客户端，sync，OK（逃
+不过shell还是好debug啊，仔细看看，发现是有个文件太大了，超过了github单文件限制(100MB)，删除后，重试，还是卡住了，WTK？！  
+猜测是因为版本记录的问题，已经把大文件写进记录里了。干脆直接重建仓库吧！
+1. 在客户端移除本地仓库
+2. 删除仓库下的.git文件夹。
+3. 新建仓库，Commit, publish, sync, ok（逃
