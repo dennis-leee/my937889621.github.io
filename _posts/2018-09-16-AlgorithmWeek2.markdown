@@ -209,9 +209,9 @@ public:
     int mergeSortAndCount(vector<int>& nums, int start, int end) {
         if (end - start <= 1) return 0;
         int mid = (start + end) / 2;
-        //分别计算两子串各自的计数  
+        //分别计算两子串各自的计数<br />
         int count = mergeSortAndCount(nums, start, mid) + mergeSortAndCount(nums, mid, end);
-        //再加上两子串间的计数  
+        //再加上两子串间的计数<br />
         for (int i = start, j = mid; i < mid; i++) {
             while (j < end && nums[i] > (long long)nums[j] * 2)
                 j++;
