@@ -15,8 +15,8 @@ tags:
 
 **Reverse Pairs**
 
-> Given an array `nums`, we call `(i, j)` an **important reverse pair** if `i < j` 
-> and `nums[i] > 2*nums[j]`.
+> Given an array `nums`, we call `(i, j)` an **important reverse pair** if `i < j`   
+> and `nums[i] > 2*nums[j]`.  
 > You need to return the number of important reverse pairs in the given array.
 
 **Example 1:**
@@ -65,9 +65,9 @@ var reversePairs = function(nums) {
 
 仔细思考题目给出的两个条件：
 1. `i < j`
-2. `nums[i] > 2 * nums[j]`
-先看第二个，不难想到，若数组是**有序**的，则不用再遍历整个数组（Hint: 下标差值）。
-再看第一个，要比较下标，则不能直接排完序再去筛选，需要在排序过程中进行下标比较。
+2. `nums[i] > 2 * nums[j]`  
+先看第二个，不难想到，若数组是**有序**的，则不用再遍历整个数组（Hint: 下标差值）。  
+再看第一个，要比较下标，则不能直接排完序再去筛选，需要在排序过程中进行下标比较。  
 再翻翻[各个经典排序算法的性能比较](https://www.jianshu.com/p/7d037c332a9d)，经过一番剧烈的思考，最终选择了较容易理解又刚好符合我们分析出的条件的归并排序。
 
 总体思路：利用归并先拆后并的特性，分别计算两个子串内部的count，再加上两个子串间的count，在递归合并的过程中同时递归count计数。
@@ -121,27 +121,27 @@ function mergeSortAndCount(arr) {
 };
 ```
 
-解析：
-考虑当算法将数组拆至最简，如`left = [3]`、`right = [9]`时，
-先分别看两个子串，满足题目两个条件的计数**均为0**，
-再看两串间，由于`left的下标`永远小于`right的下标`，故第一个条件已满足，
+解析：  
+考虑当算法将数组拆至最简，如`left = [3]`、`right = [9]`时，  
+先分别看两个子串，满足题目两个条件的计数**均为0**，  
+再看两串间，由于`left的下标`永远小于`right的下标`，故第一个条件已满足，  
 剩下的就是比较值的大小，若满足条件则计数 + 1，否则不加。
 
-则`当前串的计数 = 两子串内的计数 + 两子串间的计数`，
-即`currentCount = (leftCount + rightCount) + combineCount //在本例中为(0 + 0) + 0`,
+则`当前串的计数 = 两子串内的计数 + 两子串间的计数`，  
+即`currentCount = (leftCount + rightCount) + combineCount //在本例中为(0 + 0) + 0`,  
 将该计数返回给上层，这样递归往上传递，最终即可得出整个数组的计数。
 
 自己测试了几个样例，都没问题，提交！
 
 ![TimeLimitExceeded](/img/in-post/Algorithm/ReversePairs/jsTimeLimitExceeded.png)
 
-φ( °-°)/ , 没关系，咱们换用C++实现
+φ( °-°)/ ... 没关系，咱们换用C++实现
 
 ![TimeLimitExceeded](/img/in-post/Algorithm/ReversePairs/cppTimeLimitExceeded.png)
 
 ヽ(｀Д´)ﾉ︵ ┻━┻ ┻━┻ 
 
-搞了一晚上，实在没辙了，翻了翻别人的解题思路，用归并的基本大同小异，为啥我的就超时呢QAQ，最后找到了一个[容易理解又相似的实现](https://leetcode.com/problems/reverse-pairs/discuss/97295/C++-Clean-and-Short-MergeSort-Based)，
+搞了一晚上，实在没辙了，翻了翻别人的解题思路，用归并的基本大同小异，为啥我的就超时呢QAQ，最后找到了一个[容易理解又相似的实现](https://leetcode.com/problems/reverse-pairs/discuss/97295/C++-Clean-and-Short-MergeSort-Based)，  
 仔细对比实现才发现了一个不同------**计算两子串间的计数的方法**，仔细看了下自己的代码，最后才恍然大悟，以下是修改前后对比：
 
 **修改前**
@@ -169,7 +169,8 @@ function mergeSortAndCount(arr) {
     }
 ```
 
-差别就在于每次执行外层循环时，修改前的内层循环j重置了，实际上是不用重置的。至于原因稍微思考一下就懂了。
+差别就在于每次执行外层循环时，修改前的内层循环j重置了，实际上是不用重置的。  
+至于原因稍微思考一下就懂了。
 
 提交，终于过了〒▽〒 ~~菜鸡落泪.jpg~~
 ~~耗时优化待续~~
