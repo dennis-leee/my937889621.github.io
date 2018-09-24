@@ -9,6 +9,7 @@ tags:
     - JavaScript
     - C++
     - Algorithm
+    - Divede and Conquer
 ---
 
 ### 一、题目

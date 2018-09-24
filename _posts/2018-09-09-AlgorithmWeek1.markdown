@@ -8,6 +8,7 @@ header-img: ""
 tags:
     - JavaScript
     - Algorithm
+    - Divide and Conquer
 ---
 
 ### 一、题目
