@@ -60,6 +60,8 @@ Output: 2
 
 注意：该方法非常耗时，故需尽可能找规律进行优化。
 
+JS实现：
+
 ``` javascript
 /**
  * @param {string} A
@@ -137,6 +139,6 @@ public:
 
 ![AC](/img/in-post/Algorithm/K-SimilarStrings/CPPAC.png)
 
-~#### 思路二：~
+~~#### 思路二：~~
 
-~动态规划（待填充，学习中）~
+~~动态规划（待填充，学习中）~~
