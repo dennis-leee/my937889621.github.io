@@ -139,6 +139,6 @@ public:
 
 ![AC](/img/in-post/Algorithm/K-SimilarStrings/CPPAC.png)
 
-~~#### 思路二：~~
+#### ~~思路二：~~
 
 ~~动态规划（待填充，学习中）~~
