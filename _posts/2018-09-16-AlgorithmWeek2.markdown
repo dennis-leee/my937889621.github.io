@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Reverse Pairs"
-subtitle:   "LeetCode算法题"
+subtitle:   "Week 2 -- LeetCode -- Divede and Conquer"
 date:       2018-09-16 12:00:00
 author:     Dennis
 header-img: ""
@@ -14,7 +14,7 @@ tags:
 
 ### 一、题目
 
-**Reverse Pairs**
+[**Reverse Pairs**](https://leetcode.com/problems/reverse-pairs/description/)
 
 > Given an array `nums`, we call `(i, j)` an **important reverse pair** if `i < j`   
 > and `nums[i] > 2*nums[j]`.  

@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "K-Similar Strings"
-subtitle:   "LeetCode算法题"
+subtitle:   "Week 3 -- LeetCode -- Graph"
 date:       2018-09-23 12:00:00
 author:     Dennis
 header-img: ""
@@ -15,7 +15,7 @@ tags:
 
 ### 一、题目
 
-**K-Similar Strings**
+[**K-Similar Strings**](https://leetcode.com/problems/k-similar-strings/description/)
 
 > Strings `A` and `B` are `K`-similar (for some non-negative integer `K`) if we can swap the positions of two letters in `A` exactly `K` times so that the resulting string equals `B`.
 
