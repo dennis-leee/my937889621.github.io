@@ -85,4 +85,4 @@ var rob = function(nums) {
 
 提交结果：
 
-![AC](/img/in-post/Algorithm/HouseRobber/JSAC.png)
+![AC](/img/in-post/Algorithm/HouseRobber/1-JSAC.png)
