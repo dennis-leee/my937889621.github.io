@@ -58,7 +58,7 @@ Explanation: robot will be stuck at (1, 4) before turning left and going to (1, 
 
 #### 思路一：
 
-每执行一次移动指令，就遍历一遍路障数组（线性查找），看是否有路障
+每执行一次移动指令，就遍历一遍路障数组（线性查找），看是否有路障  
 这样时间复杂度粗略可以看做`O（N+n*K）`，N、K分别为指令、路障数组长度，n为移动指令数
 
 JS实现：
