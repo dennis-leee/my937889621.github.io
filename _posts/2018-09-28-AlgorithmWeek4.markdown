@@ -2,7 +2,7 @@
 layout:     post
 title:      "House Robber"
 subtitle:   "Week 4 -- LeetCode -- Dynamic Programming"
-date:       2018-09-28 20:00:00
+date:       2018-09-28 20:00:00 +0800
 author:     Dennis
 header-img: ""
 tags:

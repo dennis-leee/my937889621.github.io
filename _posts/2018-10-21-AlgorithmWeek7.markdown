@@ -2,7 +2,7 @@
 layout:     post
 title:      "Walking Robot Simulation"
 subtitle:   "Week 7 -- LeetCode -- Greedy"
-date:       2018-10-21 20:00:00
+date:       2018-10-21 20:00:00 +0800
 author:     Dennis
 header-img: ""
 tags:

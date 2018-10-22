@@ -2,7 +2,7 @@
 layout:     post
 title:      "Unity3D+EasyAR实例学习（一）"
 subtitle:   "HelloAR实例"
-date:       2018-04-14 19:00:00
+date:       2018-04-14 19:00:00 +0800
 author:     Dennis
 header-img: ""
 tags:

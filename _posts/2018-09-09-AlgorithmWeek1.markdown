@@ -2,7 +2,7 @@
 layout:     post
 title:      "Median of Two Sorted Arrays"
 subtitle:   "Week 1 -- LeetCode -- Divede and Conquer"
-date:       2018-09-09 18:30:00
+date:       2018-09-09 18:30:00 +0800
 author:     Dennis
 header-img: ""
 tags:

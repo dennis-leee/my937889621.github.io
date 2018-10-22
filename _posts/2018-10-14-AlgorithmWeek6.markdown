@@ -2,7 +2,7 @@
 layout:     post
 title:      "House Robber III"
 subtitle:   "Week 6 -- LeetCode -- Depth-first Search"
-date:       2018-10-14 20:00:00
+date:       2018-10-14 20:00:00 +0800
 author:     Dennis
 header-img: ""
 tags:

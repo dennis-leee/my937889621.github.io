@@ -2,7 +2,7 @@
 layout:     post
 title:      "AngularJS快速上手（一）"
 subtitle:   "Angular CLI的安装及基本使用"
-date:       2018-04-13 02:00:00
+date:       2018-04-13 02:00:00 +0800
 author:     Dennis
 header-img: ""
 tags:
