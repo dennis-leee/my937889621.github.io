@@ -20,6 +20,7 @@ tags:
 - `2`: turn left 90 degrees
 - `1`: turn right 90 degrees
 - `1 <= x <= 9`: move forward `x` units
+
 > Some of the grid squares are obstacles. 
 
 > The i-th obstacle is at grid point `(obstacles[i][0], obstacles[i][1])`
