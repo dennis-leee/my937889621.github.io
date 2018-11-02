@@ -52,6 +52,7 @@ Explanation: Because [23, 2, 6, 4, 7] is an continuous subarray of size 5 and su
 1. 保存部分Sum，通过这部分Sum之间的减法运算求得其他Sum，以减少计算次数
 2. 保存(Sum % k)，而不是直接保存Sum，减少计算难度  
    （已知`a = A % k`, `b = B % k`, 若`(a + b) % k == 0`, 则`(A + B) % k == 0`）  
+
 特殊情况：
 1. 数组长度 < 2，直接返回false
 2. k = 0，问题变为能否找到连续的两个0，特殊处理
@@ -106,10 +107,12 @@ var checkSubarraySum = function(nums, k) {
 粗略上看和思路一的优化原理差不多，但实现上可以有很大区别。对变量的说明如下：  
 `Sum`: 从第1个元素到第`i`个元素的值之和 除以 k 的`余数`  
 `lastSum`：顾名思义，上一个`Sum`，即从第1个元素到第`i - 1`个元素的值之和 除以 k 的`余数`  
-`remainderOfSumBeforeNth[n]`：nums[n]及其之前的值之和 除以 k 的`余数`  
+`remainderOfSumBeforeNth[n]`：`nums[n]`及其之前的值之和 除以 k 的`余数`  
 
 让`Sum`和`remainderOfSumBeforeNth`的`i`相差为`2`（确保满足`数组长度 >= 2`的条件）  
 这样，当`Sum==0`或`remainderOfSumBeforeNth`中存在一个值与当前`Sum`值相同时，即为`True`
+
+对特殊情况的处理同思路一
 
 emmm，直接看代码可能比较清晰XD  
 
