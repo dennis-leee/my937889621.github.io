@@ -51,7 +51,7 @@ Explanation: Because [23, 2, 6, 4, 7] is an continuous subarray of size 5 and su
 轻优化：  
 1. 保存部分Sum，通过这部分Sum之间的减法运算求得其他Sum，以减少计算次数
 2. 保存(Sum % k)，而不是直接保存Sum，减少计算难度  
-   （已知`a = A % k`, `b = B % k`, 若`(a + b) % k == 0`, 则`(A + B) % k == 0`）
+   （已知`a = A % k`, `b = B % k`, 若`(a + b) % k == 0`, 则`(A + B) % k == 0`）  
 特殊情况：
 1. 数组长度 < 2，直接返回false
 2. k = 0，问题变为能否找到连续的两个0，特殊处理
@@ -150,5 +150,6 @@ var checkSubarraySum = function(nums, k) {
 提交结果：
 ![AC](/img/in-post/Algorithm/ContinuousSubarraySum/JSAC-2.png)
 
-PS：leetcode给这题打了`Dynamic Programming`的标签，但以上两种解法貌似都不是`Dynamic Programming`  
+PS：leetcode给这题打了`Dynamic Programming`的标签，  
+但以上两种解法貌似都不是`Dynamic Programming`  
 暂时也想不出用`Dynamic Programming`要怎么解，想到再填坑吧
