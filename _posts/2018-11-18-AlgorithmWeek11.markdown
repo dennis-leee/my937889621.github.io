@@ -108,7 +108,7 @@ function (nums) {
 
 是不是很简单？！  
 现在再考虑上**有负数**的情况，  
-类似的，定义一个`min`：遍历累乘至`i - 1`时的最小值
+类似的，定义一个`min`：遍历累乘至`i - 1`时的最小值  
 更新`max = Math.max(nums[i], nums[i] * max, nums[i] * min)`  
 `min = Math.min(nums[i], nums[i] * max, nums[i] * min)`  
 注意到，判断里面多了`nums[i] * min`，这样就处理了当min为负数时，遇到下一个数为负数，负负得正这种情况  
