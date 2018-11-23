@@ -84,7 +84,7 @@ The array [1,3,2] and [2,1,3] have exactly 1 inverse pair.
 
 #### 思路一：
 
-用<div title='感觉算不上，就一简单递归'>DP（？）</div>，递归到边界再填充至(n, k).
+用DP（？：感觉算不上，就一简单递归），递归到边界再填充至(n, k)。
 
 JS实现：
 ``` javascript
@@ -117,7 +117,7 @@ var kInversePairs = function(n, k) {
 ```
 
 需要注意的是，**这里必须mod一个大数！**，因为到后面数字很大，可能会产生冲突  
-参考![算法题目中，遇到结果是大数时，为什么喜欢 MOD 10^x+7 ?](https://www.zhihu.com/question/26127900)
+参考[算法题目中，遇到结果是大数时，为什么喜欢 MOD 10^x+7 ?](https://www.zhihu.com/question/26127900)
 
 提交结果：
 ![AC](/img/in-post/Algorithm/KInversePairsArray/JSAC-1.png)
@@ -128,7 +128,7 @@ var kInversePairs = function(n, k) {
 
 #### 思路二：
 
-正向递推，按`n = 2， k = 0`、`n = 2， k = 1`、...、`n = n，k = k`的顺序填充表项
+正向递推，按`n = 2， k = 0`、`n = 2， k = 1`、...、`n = n，k = k`的顺序填充表项  
 这种实现可不用判断`k <= n * (n - 1) / 2`和该项是否已填充  
 `k`在范围外时，按`0`处理，然后按顺序填充下去就完了
 
