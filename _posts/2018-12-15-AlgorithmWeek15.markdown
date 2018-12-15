@@ -42,11 +42,11 @@ tags:
 
 简单的DP问题，不难发现子问题为：  
 `可选的两个路径中，哪个权重最小`  
-因此，我们定义一个一样的数据结构来存储最小路径的权重值即可：
+因此，我们定义一个一样的数据结构来存储最小路径的权重值即可：  
 `minimum[row][col]：以第row行，第col列为起点，到达底部的最小路径的权重值`  
 于是该问题的解就变成求解`minimum[0][0]`  
 不难得出递推式：  
-`minimum[row][col] = triangle[row][col] + min(minimum[row + 1][col], minimum[row + 1][col + 1])`
+`minimum[row][col] = triangle[row][col] + min(minimum[row+1][col], minimum[row+1][col+1])`  
 最后一行即为边界，值和三角形中最后一行的值相同
 
 ~~PS：好久没遇到这么经典的DP问题了！是不是很简单？！~~
