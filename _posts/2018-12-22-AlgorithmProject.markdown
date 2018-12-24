@@ -607,6 +607,7 @@ The assignment of customers to facilities: [19, 20, 1, 15, 9, 3, 8, 3, 6, 25, 9,
     4. 根据*Metropolis准则*判断是否接受新解，是则替换当前解为新解，否则进入下一次内循环
 4. 更新`Ti`，这里是根据快速模拟退火算法的降温方式进行降温，转2
 5. 输出近似最优解
+
 其中：
 1. *Metropolis准则*：
    ![Metropolis](/img/in-post/Algorithm/Project/Metropolis.png)
