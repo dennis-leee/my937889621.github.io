@@ -4,3 +4,6 @@ node_modules
 */.DS_Store
 */*/.DS_Store
 *.sh
+
+.vscode/launch.json
+.vscode/c_cpp_properties.json
