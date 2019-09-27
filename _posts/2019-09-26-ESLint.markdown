@@ -4,7 +4,7 @@ title:      "ESLint基本用法"
 subtitle:   ""
 date:       2019-09-26 08:00:00 +0800
 author:     Dennis
-header-img: "img/in-post/Eslint/eslint.png"
+header-img: "img/in-post/ESlint/eslint.png"
 tags:
     - JavaScript
     - 前端
@@ -44,7 +44,7 @@ eslint init
 #### 3. 通用规范
 
 ESLint内置了三个通用规范，**均可通过`npx eslint --init`命令选择自动安装**。
-![AutoInit](/img/in-post/Eslint/autoinit.png)
+![AutoInit](/img/in-post/ESlint/autoinit.png)
 **以下为手动安装**
 
 - [eslint-config-google](https://www.npmjs.com/package/eslint-config-google) 
@@ -193,7 +193,7 @@ npm install --save-dev eslint-config-standard eslint-plugin-standard eslint-plug
 
 以VSCode为例，在插件商店里搜索"Eslint"安装即可
 
-![VSCodeExtensions](/img/in-post/Eslint/VSCodeExtensions.png)
+![VSCodeExtensions](/img/in-post/ESlint/VSCodeExtensions.png)
 
 其他IDE可参考[官方文档](https://cn.eslint.org/docs/user-guide/integrations#editors)
 
