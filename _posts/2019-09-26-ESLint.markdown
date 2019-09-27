@@ -218,4 +218,4 @@ npm install --save-dev eslint-config-standard eslint-plugin-standard eslint-plug
 - [...](https://www.npmjs.com/search?q=keywords:eslintplugin)
 
 
-如有错误，还请海涵~
+见识浅薄，如有错误，还请见谅~
