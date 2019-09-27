@@ -155,7 +155,7 @@ npm install --save-dev eslint-config-standard eslint-plugin-standard eslint-plug
     }
 }
 ```
-- `"envs"`: 想要启用的环境
+- `"env"`: 想要启用的环境
 - `"extends"`: 继承的规则库，其省略了`"eslint-config-"`，例子里的库为`"eslint-config-airbnb"`，继承多个时，可用数组表示。
   也可以用一些特殊的值，如`"eslint:recommended"`，来**启用**一系列预设的核心规则
 - `"rules"`: 见规则配置
