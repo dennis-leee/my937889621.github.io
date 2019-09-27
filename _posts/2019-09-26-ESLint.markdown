@@ -1,0 +1,221 @@
+---
+layout:     post
+title:      "ESLint基本用法"
+subtitle:   ""
+date:       2019-09-26 08:00:00 +0800
+author:     Dennis
+header-img: "img/in-post/Eslint/eslint.png"
+tags:
+    - JavaScript
+    - 前端
+---
+
+> 前言：做前端的同学多多少少会听说过这个“令人抓狂”的工具。是的，曾经我也这样觉得，直到我见识到各种千奇百怪的代码之后...
+
+### 一、ESLint简介
+
+> ESLint 是在 ECMAScript/JavaScript 代码中识别和报告模式匹配的工具，它的目标是保证代码的一致性和避免错误
+
+简单地说，ESlint可以帮助我们定义一个代码编写规范，不遵循这个规范的人会得到一个`Error/Warning`，甚至可以禁止提交代码。
+
+它可以集成到IDE里，在编写代码的同时校验代码，随错随改。
+
+这样做有什么好处？
+- 避免低级错误，减少调试耗时和潜在bug
+- 统一代码风格，提高可维护性
+- 督促团队成员遵守约定的最佳实践，提高代码质量
+
+### 二、安装
+
+#### 1. 脚手架搭建的项目
+
+现在大部分脚手架中都已经内置了相应的ESlint，只需简单配置一下`.eslintrc`文件即可使用。 
+
+#### 2. 自己搭建的项目
+
+如果是自己搭建的项目，可以在你项目根目录下执行以下命令，即可自动添加依赖并初始化配置文件。
+```
+npm install eslint --save-dev
+eslint init
+```
+此外，如果你自己搭建的项目使用的不是纯Javascript，则需要额外引入一些规范，比如是React项目，则需要引入[eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react).  
+其它规范详见[文档](https://cn.eslint.org/docs/user-guide/integrations#external-eslint-rules)
+
+#### 3. 通用规范
+
+ESLint内置了三个通用规范，**均可通过`npx eslint --init`命令选择自动安装**。
+![AutoInit](/img/in-post/Eslint/autoinit.png)
+**以下为手动安装**
+
+- [eslint-config-google](https://www.npmjs.com/package/eslint-config-google) 
+  Google标准，遵循[Google JavaScript style guide (ES2015+ version)](https://google.github.io/styleguide/jsguide.html)  标准  
+手动安装：
+```
+npm install eslint eslint-config-google --save-dev
+```
+
+- [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
+Airbnb标准，它支持`ECMAScript 6+`和`React`语法，依赖特定版本的`eslint, eslint-plugin-import, eslint-plugin-react, eslint-plugin-react-hooks, and eslint-plugin-jsx-a11y`
+
+若使用的`npm`为5.0以上版本，可以执行以下命令来手动安装：
+```
+npx install-peerdeps --dev eslint-config-airbnb
+```
+若为`npm`5.0以下版本，可以执行以下命令查看所依赖的各个版本：
+```
+npm info eslint-config-airbnb@latest peerDependencies
+```
+之后再根据结果`npm install`相应依赖即可
+
+- [eslint-config-standard](https://www.npmjs.com/package/eslint-config-standard)
+遵循[JavaScript Standard Style](https://standardjs.com/)标准
+手动安装：
+```
+npm install --save-dev eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
+```
+
+### 三、基本用法
+
+#### 1. 参数配置
+
+一个简单的`.eslintrc`配置文件通常是这样的：
+
+```javascript
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2018,
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "settings": {
+        "import/resolver": "node"
+    }
+    "rules": {
+        "arrow-body-style": [0, "never"],
+    "comma-dangle": [2, "always-multiline"],
+    "global-require": 0,
+    "func-names": 0,
+    "prefer-const": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "max-len": 0,
+    "no-unused-expressions": [0, {
+      "allowShortCircuit": true,
+      "allowTernary": true
+    }],
+    "no-trailing-spaces": "off",
+    "linebreak-style": "off",
+    "no-console": 0,
+    "no-extend-native": 0,
+    "no-param-reassign": 0,
+    "no-restricted-syntax": 0,
+    "no-eval": 0,
+    "no-continue": 0,
+    "no-mixed-operators": 0,
+    "no-plusplus": 0,
+    "no-unused-vars": [2, { "ignoreRestSiblings": true }],
+    "no-underscore-dangle": 0,
+    "space-before-function-paren": [2, "always"],
+    "semi": [2, "never"],
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/href-no-hash": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "jsx-a11y/label-has-for": 0,
+    "react/no-array-index-key": 0,
+    "react/require-default-props": 0,
+    "react/forbid-prop-types": 0,
+    "react/no-string-refs": 0,
+    "react/no-find-dom-node": 0,
+    "react/prefer-stateless-function": 0,
+    "react/jsx-closing-tag-location": 0,
+    "react/sort-comp": 0,
+    "react/jsx-no-bind": 0,
+    "react/no-danger": 0,
+    "react/destructuring-assignment": 0,
+    "react/jsx-first-prop-new-line": 0,
+    "react/jsx-filename-extension": 0,
+    "consistent-return": "off",
+    "array-callback-return": "off",
+    "lines-between-class-members": "off"
+    }
+}
+```
+- `"envs"`: 想要启用的环境
+- `"extends"`: 继承的规则库，其省略了`"eslint-config-"`，例子里的库为`"eslint-config-airbnb"`，继承多个时，可用数组表示。
+  也可以用一些特殊的值，如`"eslint:recommended"`，来**启用**一系列预设的核心规则
+- `"rules"`: 见规则配置
+- `"parser"`: 解析器，默认为[`"Esprima"`](https://www.npmjs.com/package/esprima)，此外还有[`"Babel-ESLint"`](https://cn.eslint.org/docs/user-guide/configuring)，[`"@typescript-eslint/parser"`](https://www.npmjs.com/package/@typescript-eslint/parser)
+- `"parserOptions"`: 解析器的配置属性，详见[文档](https://cn.eslint.org/docs/user-guide/configuring#specifying-parser-options)
+- `"settings"`: 共享配置，每个规则将被执行的规则都能访问，详见[文档](https://cn.eslint.org/docs/user-guide/configuring#adding-shared-settings)
+
+更多配置可查阅[官方文档](https://cn.eslint.org/docs/user-guide/configuring)
+
+#### 2. 规则配置
+规则字段看起来是这样的
+```javascript
+{
+    ...,
+    "rules": {
+        "quotes": ["error", "single"],
+        ...
+    }
+}
+```
+其中`"quotes"`是规范内定义好的规则名称  
+第一个值是错误级别，可以使用以下值：
+
+- `"off"` 或 `0`，关闭规则
+- `warn` 或 `1`，将规则视为一个`Warning`
+- `error` 或 `2`，将规则视为一个`Error`
+
+第二个值是规则配置，每条规则的配置不尽相同
+
+以上规则的意思为，规定除了需要转义的情况外，字符串统一使用单引号，否则抛出一个错误
+
+如果现有规范都不能满足你的需求。你也可以[自定义规则](https://cn.eslint.org/docs/developer-guide/working-with-rules)
+
+#### 3. IDE配置
+
+以VSCode为例，在插件商店里搜索"Eslint"安装即可
+
+![VSCodeExtensions](/img/in-post/Eslint/VSCodeExtensions.png)
+
+其他IDE可参考[官方文档](https://cn.eslint.org/docs/user-guide/integrations#editors)
+
+#### 4. 小技巧
+
+- 在引入`ESLint`后有大片的飘红，可以通过`eslint --fix`命令自动修复大部分报错
+- 在某种特殊情况下，想局部禁用ESLint，可以在该文件顶部加一行`/*eslint-disable*/`
+- 也可以只禁用某个规则`/*eslint-disable no-console*/`
+- 还可以在某一行后添加`/*eslint-disable-line*/`以禁用所有规则
+
+更多用法查阅[官方文档](https://cn.eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments)
+
+
+
+### 四、常见规则列表
+
+- [标准库](https://cn.eslint.org/docs/rules/)
+- [React](https://github.com/yannickcr/eslint-plugin-react)
+- [AngularJS](https://github.com/EmmanuelDemey/eslint-plugin-angular)
+- [BackboneJS](https://github.com/ilyavolodin/eslint-plugin-backbone)
+- [Jasmine](https://github.com/tlvince/eslint-plugin-jasmine)
+- [...](https://www.npmjs.com/search?q=keywords:eslintplugin)
+
+
+如有错误，还请海涵~
